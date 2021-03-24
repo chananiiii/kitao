@@ -24,8 +24,8 @@ public class DatabaseTestFile {
     @org.junit.Test
     public void test() throws Exception{
 		
-		 try(Connection conn = ds.getConnection()){ System.out.println(conn); }
-		 catch(Exception e){ e.printStackTrace(); }
+		 //try(Connection conn = ds.getConnection()){ System.out.println(conn); }
+		 //catch(Exception e){ e.printStackTrace(); }
 		 
     }
    
@@ -39,8 +39,8 @@ public class DatabaseTestFile {
     @org.junit.Test
     public void sessionTest() throws Exception{
 		
-		 try(SqlSession session = sqlFactory.openSession()) {
-		 System.out.println(session); }catch(Exception e) { e.printStackTrace(); }
+		 //try(SqlSession session = sqlFactory.openSession()) {
+		 //System.out.println(session); }catch(Exception e) { e.printStackTrace(); }
 		 
     }
 }
