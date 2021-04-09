@@ -14,13 +14,9 @@ public class BoardServiceImpl implements BoardService {
     @Autowired    
 	private COEBoardDAO boardDAO;
     
-    @Autowired
-    private test test;
-
 	@Override
 	public List<BoardVO> selectBoardList() throws Exception {
-	    test.a();
-	    
+	    // 비즈니스 로직 수행
 		return boardDAO.boardSearch();
 	} 
 }
